@@ -1,0 +1,15 @@
+{
+  "name": "ProductForm",
+  "version": "1.0.0",
+  "category": "forms",
+  "purpose": "Handle product creation and editing with validation",
+  "lastModified": "2025-05-24T01:45:15Z",
+  "modifiedBy": "setup-script",
+  "status": "stable",
+  "criticalityLevel": "high",
+  "dependencies": {
+    "internal": [],
+    "external": ["lodash"],
+    "events": ["product:validate", "product:submit", "product:error"]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "components": {
+    "ProductForm": {
+      "hasBaselines": false,
+      "viewports": ["desktop", "tablet", "mobile"],
+      "scenarios": ["empty", "filled", "error", "edit", "readonly"],
+      "coverage": 0
+    }
+  },
+  "coverage": {
+    "total": 1,
+    "withBaselines": 0,
+    "percentage": 0
+  }
+}

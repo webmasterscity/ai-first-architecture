@@ -1,0 +1,23 @@
+{
+  "inputs": {
+    "userData": {
+      "type": "object",
+      "schema": {
+        "id": "string?",
+        "email": "string",
+        "name": "string",
+        "role": "string"
+      }
+    }
+  },
+  "methods": {
+    "createUser": {
+      "parameters": ["userData"],
+      "returns": "Promise<User>"
+    },
+    "getUser": {
+      "parameters": ["id"],
+      "returns": "Promise<User>"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "projectInfo": {
+    "name": "AI-First Architecture",
+    "version": "1.0.0",
+    "architecture": "Atomic Component System",
+    "purpose": "Facilitar desarrollo con IA sin romper el sistema"
+  },
+  "aiInstructions": {
+    "beforeAnyChange": [
+      "Leer metadata/component-map.json para entender dependencias",
+      "Ejecutar 'npm run ai:analyze' para evaluar impacto",
+      "Revisar tests existentes del componente a modificar"
+    ],
+    "duringDevelopment": [
+      "Seguir estructura atomic component system",
+      "Mantener aislamiento entre componentes",
+      "Actualizar interface.json si cambias inputs/outputs"
+    ],
+    "afterChanges": [
+      "Ejecutar tests del componente modificado",
+      "Correr 'npm run test:visual' si hay cambios UI",
+      "Actualizar component.json si es necesario"
+    ]
+  },
+  "componentRules": {
+    "structure": {
+      "required": ["component.json", "logic.js", "interface.json", "tests.js"],
+      "optional": ["visual-tests.js", "visual-scenarios.json"]
+    },
+    "naming": {
+      "pattern": "PascalCase",
+      "examples": ["ProductForm", "UserService", "PaymentWorkflow"]
+    }
+  },
+  "testingRules": {
+    "isolation": "Cada componente debe ser testeable sin setup global",
+    "coverage": "Mínimo 80% coverage para componentes críticos",
+    "visualTesting": "Obligatorio para componentes con UI"
+  }
+}

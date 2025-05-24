@@ -1,0 +1,22 @@
+{
+  "ProductForm": {
+    "path": "components/forms/ProductForm",
+    "dependencies": [],
+    "dependents": [],
+    "lastModified": "2025-05-24T01:45:15Z",
+    "status": "stable",
+    "criticalityLevel": "high",
+    "hasVisualTests": true,
+    "testCoverage": 95
+  },
+  "UserService": {
+    "path": "components/services/UserService",
+    "dependencies": [],
+    "dependents": [],
+    "lastModified": "2025-05-24T01:45:15Z",
+    "status": "stable",
+    "criticalityLevel": "medium",
+    "hasVisualTests": false,
+    "testCoverage": 88
+  }
+}

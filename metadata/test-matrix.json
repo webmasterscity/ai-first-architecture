@@ -1,0 +1,28 @@
+{
+  "components": {
+    "ProductForm": {
+      "unitTests": true,
+      "visualTests": true,
+      "integrationTests": false,
+      "coverageThreshold": 80
+    },
+    "UserService": {
+      "unitTests": true,
+      "visualTests": false,
+      "integrationTests": true,
+      "coverageThreshold": 85
+    }
+  },
+  "testSuites": {
+    "unit": {
+      "pattern": "**/*.test.js",
+      "timeout": 30000,
+      "parallel": true
+    },
+    "visual": {
+      "pattern": "**/*visual-tests.js", 
+      "timeout": 60000,
+      "parallel": false
+    }
+  }
+}

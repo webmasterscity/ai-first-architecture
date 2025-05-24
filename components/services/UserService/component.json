@@ -1,0 +1,10 @@
+{
+  "name": "UserService",
+  "version": "1.0.0",
+  "category": "services",
+  "purpose": "Handle user-related operations and data management",
+  "lastModified": "2025-05-24T01:45:15Z",
+  "modifiedBy": "setup-script",
+  "status": "stable",
+  "criticalityLevel": "medium"
+}

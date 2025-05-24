@@ -1,0 +1,36 @@
+{
+  "inputs": {
+    "productData": {
+      "type": "object",
+      "required": false,
+      "default": {},
+      "schema": {
+        "id": "string?",
+        "name": "string",
+        "price": "number",
+        "category": "string",
+        "description": "string?",
+        "active": "boolean"
+      }
+    },
+    "options": {
+      "type": "object",
+      "required": false,
+      "default": {},
+      "schema": {
+        "mode": "create|edit",
+        "readOnly": "boolean"
+      }
+    }
+  },
+  "outputs": {
+    "onSubmit": {
+      "type": "function",
+      "parameters": ["productData", "isValid"]
+    },
+    "onChange": {
+      "type": "function", 
+      "parameters": ["fieldName", "value", "isValid"]
+    }
+  }
+}
